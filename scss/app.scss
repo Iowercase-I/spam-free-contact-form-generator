@@ -1,0 +1,310 @@
+@charset 'utf-8';
+
+@import 'settings';
+@import 'foundation';
+@import 'motion-ui';
+
+@include foundation-global-styles;
+//@include foundation-grid;
+// @include foundation-flex-grid;
+@include foundation-xy-grid-classes;
+@include foundation-typography;
+@include foundation-button;
+@include foundation-forms;
+// @include foundation-range-input;
+@include foundation-accordion;
+@include foundation-accordion-menu;
+@include foundation-badge;
+@include foundation-breadcrumbs;
+@include foundation-button-group;
+@include foundation-callout;
+@include foundation-card;
+@include foundation-close-button;
+@include foundation-menu;
+@include foundation-menu-icon;
+@include foundation-drilldown-menu;
+@include foundation-dropdown;
+@include foundation-dropdown-menu;
+@include foundation-responsive-embed;
+@include foundation-label;
+@include foundation-media-object;
+@include foundation-off-canvas;
+@include foundation-orbit;
+@include foundation-pagination;
+@include foundation-progress-bar;
+// @include foundation-progress-element;
+// @include foundation-progress-element;
+// @include foundation-meter-element;
+@include foundation-slider;
+@include foundation-sticky;
+@include foundation-reveal;
+@include foundation-switch;
+@include foundation-table;
+@include foundation-tabs;
+@include foundation-thumbnail;
+@include foundation-title-bar;
+@include foundation-tooltip;
+@include foundation-top-bar;
+@include foundation-visibility-classes;
+// @include foundation-float-classes;
+@include foundation-flex-classes;
+
+// @include foundation-prototype-classes;
+@include motion-ui-transitions;
+@include motion-ui-animations;
+
+body {
+  font-family: Arial;
+  background-image: url("../img/chem_bg_7.png");
+  background-repeat: repeat;
+}
+
+.red{
+  color:#FF0000;
+}
+
+.tpbg{
+    background-color: transparent!important;
+}
+
+#money_button_preview{
+        pointer-events: none;
+}
+#privacy_policy_content{
+        display: none;
+}
+
+#license_content{
+        display: none;
+}
+#aff_content{
+        display: none;
+}
+#donate{
+        display: none;
+}
+#donate_payment{
+        display: none;
+}
+#newsletter_preview{
+        display: none;
+}
+#code{
+        display: none;
+}
+
+.margins{
+      margin-right: 10px;
+      margin-left: 10px;
+}
+
+
+.black_bg{
+    background-color:#000000;
+}
+
+.sources{
+    font-size:.9em;
+}
+
+// title bar
+.title-bar {
+    background-color: transparent;
+}
+
+.white_link{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1em;
+    margin-right: 5px;
+    margin-top: 7px;
+}
+.white_link:hover {
+    color: #FFE878;
+    text-decoration: none;
+    font-size: 1em;
+    margin-right: 5px;
+    margin-top: 7px;
+}
+
+#share2 {
+    width: 100%;
+    text-align: right;
+}
+
+#share {
+    float: right;
+    width: 50%;
+    text-align: right;
+}
+
+.float_right{
+  float: right;
+}
+
+.pad {
+  padding:10px;
+}
+
+h3{
+  font-size: 1.5em;
+}
+
+.thumb{
+  padding: 0px;
+  margin-top:5px;
+  border: 1px solid #000000;
+}
+
+.black_bg{
+    background-color:#000000;
+
+}
+
+.build {
+      margin-bottom:20px;
+}
+
+.preview {
+    border: 1px solid #000000;
+      height: 300px;
+            margin-bottom:10px;
+                  padding:10px;
+                  overflow-y: auto;
+}
+.code {
+    width:100%;
+      height: 300px;
+            margin-bottom:10px;
+                  padding:10px;
+}
+.generate {
+      border: 2px solid #000000;
+  background-color:#010011;
+      height: 300px;
+            padding:10px;
+}
+
+.footer{
+    background-color:#000000;
+}
+
+
+.center {
+    width: 100%;
+    padding-left:20px;
+}
+
+
+
+.white {
+    color: #ffffff;
+    width: 100%;
+    text-align: left;
+    text-decoration: none;
+}
+
+.yellow {
+    color: #FFE878;
+    width: 100%;
+    text-align: left;
+    text-decoration: none;
+}
+
+.white a:hover {
+    color: #FFE878;
+}
+
+.white_bg {
+    background-color: #ffffff;
+    padding:10px;
+}
+
+.wrapper{
+    width:100%;
+}
+
+
+.nodecoration:visited{
+    color: #ffffff;
+}
+.nodecoration:hover{
+    color: #FFE878;
+}
+
+.checkboxes{
+  white-space:nowrap;
+}
+
+
+// Responsive
+@media (max-width: 639px) {
+
+    .white_tag {
+        font-size: 1em;
+        color: #000000;
+    }
+    h1 {
+        color: #000000;
+        font-size: 1.6em;
+    }
+
+    #share {
+        display: none;
+        visibility: hidden;
+    }
+    #share2 {
+        display: block;
+        visibility: visible;
+    }
+
+}
+
+@media (min-width: 640px) {
+    .white_tag {
+        font-size: 1em;
+        color: #000000;
+    }
+
+    #share2 {
+        display: none;
+        visibility: hidden;
+    }
+    #share {
+        display: block;
+        visibility: visible;
+    }
+
+}
+
+
+
+// social buttons responsive
+@media (max-width: 1280px) {
+    #contact-buttons-bar {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+@media (min-width: 1281px) {
+    #contact-buttons-bar {
+        display: block;
+        visibility: visible;
+    }
+}
+
+//fix mobile menu flashing during desktop load and vice-versa
+.title-bar {
+    @include breakpoint(medium) {
+        display: none;
+    }
+}
+
+.top-bar {
+    display: none;
+
+    @include breakpoint(medium) {
+        display: block;
+    }
+}

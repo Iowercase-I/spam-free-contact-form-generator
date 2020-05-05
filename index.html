@@ -1,0 +1,452 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Spam-free Contact Form Generator with Bitcoin (BSV) and Money Button">
+  <meta name="keywords" content="contact form generator">
+  <title>Spam-free Contact Form Generator with Bitcoin (BSV) and Money Button</title>
+
+  <link href="img/bsv-icon-small.png" rel="shortcut icon" type="image/x-icon" />
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/contact-buttons.css">
+  <link rel="stylesheet" href="css/jssocials-theme-flat.css">
+  <link rel="stylesheet" href="css/jssocials.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
+</head>
+<body>
+
+  <div class="black_bg">
+    <!-- Back to top link -->
+    <a name="top"></a>
+    <!-- Start tile bar and menu -->
+    <div class="title-bar" data-responsive-toggle="example-animated-menu" data-hide-for="medium">
+      <button class="menu-icon" type="button" data-toggle></button>
+      <div class="title-bar-title">Menu</div>
+      <div id="share2"></div>
+    </div>
+    <div class="top-bar" id="example-animated-menu" data-animate="hinge-in-from-top spin-out">
+      <div class="top-bar-left">
+
+        <span id="share"></span>
+        <ul class="dropdown menu" data-dropdown-menu>
+          <li>
+            <a class="white_link tpbg" href="https://github.com/Iowercase-I/spam-free-contact-form">Demo Download</a>
+          </li>
+          <li>
+            <a class="white_link tpbg" href="https://github.com/Iowercase-I/spam-free-contact-form">Generator Download</a>
+          </li>
+          <li>
+            <a class="white_link tpbg" href="#contact">Contact Us</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+    <!-- End title bar and menu -->
+
+    <!-- main content page link -->
+    <a name="home"></a>
+
+  </div>
+  <!-- End black bg-->
+
+  <!-- Begin main content-->
+  <div class="grid-container">
+    <div class="grid-x grid-margin-x">
+      <div class="large-12 cell margins white_bg">
+
+
+
+
+        <a target="_blank" href="https://bitcoinsv.io/"><img src="img/bsv-logo-small.png" width="100px"></img></a>
+        <a target="_blank" href="https://www.moneybutton.com/"><img src="img/money_button.png" width="100px"></img></a>
+        <a target="_blank" href="https://foundation.zurb.com/"><img src="img/zurb_logo.jpg" width="100px"></img></a><br /><br />
+        <h3>Spam-free Contact Form Generator with Bitcoin (BSV) and Money Button</h3>
+<p>
+<b>Step 1:</b> Build Form<br />
+<b>Step 2:</b> Click 'Generate Code'<br />
+<b>Step 3:</b> <a href="https://github.com/Iowercase-I/spam-free-contact-form"><u>Download Demo On GitHub</u></a> and Replace Two Code Snippets<br />
+</p>
+        <!-- Begin top content-->
+        <h3 class="red">Step 1: Build Form<br /><i class="fa fa-arrow-down" aria-hidden="true"></i>
+          <i class="fa fa-arrow-down" aria-hidden="true"></i>
+          <i class="fa fa-arrow-down" aria-hidden="true"></i>
+          <i class="fa fa-arrow-down" aria-hidden="true"></i>
+          <i class="fa fa-arrow-down" aria-hidden="true"></i>
+          <i class="fa fa-arrow-down" aria-hidden="true"></i>
+          <i class="fa fa-arrow-down" aria-hidden="true"></i>
+</h3>
+        <div class="grid-x grid-margin-x">
+
+          <div class="large-6 medium-6 cell">
+            <fieldset class="fieldset">
+              <legend><b>Build Form</b></legend>
+              <form id="previewForm" action="submit_preview.php" method="post">
+
+
+                <div  id="title_builder" class="large-12 cell">
+                  <label class="textboxes">Edit Title</label>
+                  <input id="title" type="text" name="form_title" value="My Custom Spam-free Contact Form" />
+                </div>
+
+                <fieldset class="fieldset">
+                  <legend>Edit Form Fields</legend>
+                  <div class="grid-x grid-margin-x">
+
+                    <div class="large-6 medium-6 cell">
+                      <label class="checkboxes"><input id="name_builder" type="checkbox" checked>Name</label>
+                      <label class="checkboxes"><input id="email_builder" type="checkbox" checked>Email</label>
+                      <label class="checkboxes"><input id="website_builder" type="checkbox" checked>Website</label>
+                      <label class="checkboxes"><input id="donate_option" type="checkbox" checked>Donate Option</label>
+
+                    </div>
+                    <div class="large-6 medium-6 cell">
+                      <label class="checkboxes"><input id="phone_builder" type="checkbox" checked>Phone</label>
+                      <label class="checkboxes"><input id="message_builder" type="checkbox" checked>Message</label>
+                      <label class="checkboxes"><input id="newsletter_builder" type="checkbox" >Newsletter</label>
+                    </div>
+                  </div>
+                </fieldset>
+
+                <div class="grid-x grid-margin-x">
+                  <div class="large-12 cell">
+                    <label>Button Type
+                      <select id="type" name="form_type">
+                        <option selected value="tip">Tip</option>
+                        <option value="buy">Buy</option>
+                      </select>
+                    </label>
+                  </div>
+
+                  <div class="large-12 cell">
+                    <label>Select Currency
+                      <select id="selected_currency" name="form_currency">
+                        <option selected value="USD">US Dollar</option>
+                        <option value="BSV">Bitcoin SV</option>
+                      </select>
+                    </label>
+                  </div>
+
+
+                  <div class="large-12 cell">
+                    <label class="textboxes">Money Button User Number or BSV Address</label>
+                    <input type="text" id="user_number" name="form_user_number_or_bsv" value="1Aqs2y6Skt1KXDaw1k8qbSiuV6Cktbi4Kq" />
+                  </div>
+                </div>
+                <div class="grid-x grid-margin-x">
+                  <div class="large-6 medium-6 cell">
+                    <label class="textboxes">Amount</label>
+                    <input type="text" id="amount" name="form_amount" value=".001" />
+                  </div>
+
+                  <div class="large-6 medium-6 cell">
+                    <label class="textboxes">Money Button Client Identifier</label>
+                    <input type="text" id="client_id" name="form_client_identifier" placeholder="Optional" />
+                  </div>
+                  <div class="large-6 medium-6 cell">
+                    <label class="textboxes">Money Button Label</label>
+                    <input type="text" id="button_label" name="form_button_label" value="Spam-free" />
+                  </div>
+                  <div class="large-6 medium-6 cell">
+                    <label class="textboxes">Money Button ID</label>
+                    <input type="text" id="button_id" name="form_button_id" placeholder="Optional" />
+                  </div>
+                  <div class="large-6 medium-6 cell">
+                    <label class="textboxes">Destination Email Address</label>
+                    <input type="text" id="your_email" name="form_destination_email" placeholder="you@yourdomain.com"/>
+                  </div>
+                  <div class="large-6 medium-6 cell">
+                    <label class="textboxes">Redirect URL with http:// or https://</label>
+                    <input type="text" id="redirect_url" name="form_redirect_url" value="https://github.com/Iowercase-I/spam-free-contact-form-generator" />
+
+                  </div>
+
+                </div>
+              </fieldset>
+
+            </div>
+
+            <div class="large-6 medium-6 cell">
+              <fieldset class="fieldset">
+                <legend><b>Preview Form</b></legend>
+                <div class="large-12 cell">
+                  <h3 id="title_preview">My Custom Spam-free Contact Form</h3>
+                </div>
+                <div id="name_preview" class="large-12 cell">
+                  <label>Name</label><input type='text' name='form_name' placeholder='Your Name' />
+                </div>
+
+                <div id="email_preview" class="large-12 cell">
+                  <label>Email</label><input type='text' name='form_email' placeholder='Your Email' />
+                </div>
+
+                <div id="website_preview" class="large-12 cell">
+                  <label>Website</label><input type='text' name='form_website' placeholder='Your Website' />
+                </div>
+                <div id="phone_preview" class="large-12 cell">
+                  <label>Phone</label><input type='text' name='form_phone' placeholder='Your Phone' />
+                </div>
+                <div id="newsletter_preview" class="large-12 cell">
+                  <label class="checkboxes"><input id="newsletter_preview_checkbox" name='form_newsletter' type="checkbox">Newsletter Sign-up</label>
+                </div>
+
+                <div id="donate_preview" class="large-12 cell">
+                  <label class="checkboxes"><input id="donation_preview_checkbox_option" type="checkbox">Add Donation</label>
+                  <div id="donate_payment" class="large-12 cell">
+                    <div class="grid-x grid-margin-x">
+                      <div class="large-6 medium-6 small-6 cell">
+                        <label class="textboxes">Amount</label>
+                        <input type="text" id="donation_amount_preview" name="donation_amount" value=".001" />
+                      </div>
+                      <div class="large-6 medium-6 small-6 cell">
+                        <label>Select Currency
+                          <select id="donation_currency_preview" name="donation_currency">
+                            <option selected value="USD">US Dollar</option>
+                            <option value="BSV">Bitcoin SV</option>
+                          </select>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div id="message_preview" class="large-12 cell">
+                  <label>Message</label>
+                  <textarea name="form_message" placeholder="Message"></textarea>
+                </div>
+                <div class="large-12 cell">
+                  <div id="money_button_preview" class="large-12 cell">
+                  </div>
+                  <br /><br />
+                  <div class="large-12 cell">
+                    <h3 class="red">Step 2: Click 'Generate Code'<br /><i class="fa fa-arrow-down" aria-hidden="true"></i>
+                      <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                      <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                      <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                      <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                      <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                      <i class="fa fa-arrow-down" aria-hidden="true"></i>
+</h3>
+                    <a href="#code_link"><button id="get_code_button" class="button">Generate Code</button></a>
+
+                  </div>
+                </div>
+
+              </form>
+
+            </fieldset>
+          </div>
+
+
+        </div>
+        <!-- End top content-->
+
+
+        <br />
+        <div id="code">
+          <div class="large-12 cell">
+            <a name="code_link"></a>
+            <h3 class="red">Step 3: Download Demo On GitHub and Replace Two Code Snippets<br /><i class="fa fa-arrow-down" aria-hidden="true"></i>
+              <i class="fa fa-arrow-down" aria-hidden="true"></i>
+              <i class="fa fa-arrow-down" aria-hidden="true"></i>
+              <i class="fa fa-arrow-down" aria-hidden="true"></i>
+              <i class="fa fa-arrow-down" aria-hidden="true"></i>
+              <i class="fa fa-arrow-down" aria-hidden="true"></i>
+              <i class="fa fa-arrow-down" aria-hidden="true"></i>
+  </h3>
+            <h5><a target="_blank" href="https://github.com/Iowercase-I/spam-free-contact-form"><u>Download Demo on GitHub</u></a>  and follow these two steps:</h5>
+            <div class="grid-x grid-margin-x">
+
+              <div id="anchor" class="large-6 medium-6 cell">
+
+                <p>1. <a onclick="copyToClipboard('#code_html')"><u>Copy HTML</u></a> and replace &lt;form&gt; in 'index.html'</p>
+
+
+                <div id="code_html" class="preview" contenteditable>
+                </div>
+              </div>
+              <div class="large-6 medium-6 cell">
+
+                <p>2. <a onclick="copyToClipboard('#code_php')"><u>Copy PHP</u><</a> and replace 'submit_contact.php'</p>
+
+                <div id="code_php" class="preview" contenteditable>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <br />
+        </div>
+        <!-- End Generate code-->
+        <div class="large-12 cell">
+          <h5>About</h5>
+          <ul>
+            <li>Eliminate contact form spam by requiring a Bitcoin (BSV) payment before form will submit.</li>
+            <li>Money Button payments are nearly instant and nearly free, but you can also charge as much as you want and collect donations.</li>
+            <li><a target="_blank" href="https://www.moneybutton.com/"><u>Sign-up for Money Button here</u></a>. Fund wallet with Bitcoin (BSV).</li>
+            <li>Money Button is a client-side wallet and only users have access to their funds.</li>
+            <li><a target="_blank" href="https://github.com/Iowercase-I/spam-free-contact-form"><u>Get Demo on GitHub</u></a></li>
+            <li>Edit Money Button HTML with <a  target="_blank" href="https://docs.moneybutton.com/"><u>Money Button Docs</u></a></li>
+            <li>A valid Bitcoin (BSV) address is all you need to receive funds and place Money Button on your web site. However, if you want to use and test Money Buttons, you will need a Money Button account.</li>
+            <li>Funds received at the default Bitcoin (BSV) address will be considered donations.</li>
+          </ul>
+        </div>
+
+
+        <div id="money_button_preview"  onclick="return false;" class="large-12 cell">
+        </div>
+        <br />
+
+
+
+
+        <!-- form and related products and right column-->
+        <!-- Wrap grid columns -->
+        <div class="grid-x grid-margin-x">
+          <div class="large-8 medium-8 cell">
+
+            <!-- Second callout -->
+            <!-- Contact Page Link -->
+            <a name="contact"></a>
+
+            <div class="primary callout">
+        <h5><strong>Contact Us</strong></h5>
+        <p>Questions? Contact us here.
+        <form id="myForm" action="submit_contact.php" method="post">
+          <div class="grid-x grid-margin-x">
+            <div class="large-12 cell">
+              <label>Name</label>
+              <input type="text" name="name" placeholder="Your Name" />
+            </div>
+            <div class="large-12 cell">
+              <label>Email</label>
+              <input type="text" name="email" placeholder="Your Email" />
+            </div>
+            <div class="large-12 cell">
+              <label>Web Site</label>
+              <input type="text" name="personal_site" placeholder="Your Web Site" />
+            </div>
+            <div class="large-12 cell">
+              <label>Phone</label>
+              <input type="text" name="phone" placeholder="Your Phone" />
+            </div>
+            <div class="large-12 cell">
+              <label class="checkboxes"><input id="newsletter_checkbox" name="newsletter" type="checkbox" >Newsletter Sign-up</label>
+              <label class="checkboxes"><input id="donation_checkbox" type="checkbox" >Add Donation</label>
+            </div>
+            <div class="large-12 cell">
+              <div id="donate">
+                <div class="grid-x grid-margin-x">
+                  <div class="large-6 medium-6 small-6 cell">
+                    <label class="textboxes">Amount</label>
+                    <input type="text" id="donation_amount" name="donation_amount" value=".001" />
+                  </div>
+                  <div class="large-6 medium-6 small-6 cell">
+                    <label>Select Currency
+                      <select id="donation_currency" name="donation_currency">
+                        <option selected value="USD">US Dollar</option>
+                        <option value="BSV">Bitcoin SV</option>
+                      </select>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="large-12 cell">
+              <label>Comments</label>
+              <textarea name="message" placeholder="Comments"></textarea>
+            </div>
+            <div class="large-12 cell">
+              <div id="money_button_contact">
+              </div>
+            </div>
+
+        </div>
+          </form>
+
+
+      </div><!-- End callout -->
+        </div><!-- End large 8 medium 8-->
+
+          <!-- Right column goes here-->
+      </div><!-- end grid container-->
+
+
+    </div>
+  </div>
+</div>
+  <!-- End main content by closing 3 divs-->
+
+
+
+
+  <!-- start footer black bg and 3 divs-->
+  <div class="black_bg">
+    <div class="grid-container">
+      <div class="grid-x grid-margin-x">
+        <div class="large-12 cell margins">
+          <!-- end top 3 divs-->
+
+          <br />
+          <h5 class="white">Share Spam-free Contact Form Generator</h5>
+          <div id="share1"></div>
+
+
+          <hr>
+
+          <br />
+          <br />
+          <p class="white"><a class="white" id="lnk4"><u>MIT Licence</u></a></p>
+<div class="white sources" id="license_content">
+  <div class="white">
+
+    <p>Copyright © 2020</p>
+    <p><a href="https://github.com/Iowercase-I/spam-free-contact-form-generator">https://github.com/Iowercase-I/spam-free-contact-form-generator</a></p>
+
+    <p>Permission is hereby granted, free of charge, to any person obtaining a copy
+      of this software and associated documentation files (the "Software"), to deal
+      in the Software without restriction, including without limitation the rights
+      to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+      copies of the Software, and to permit persons to whom the Software is
+      furnished to do so, subject to the following conditions:</p>
+
+      <p>The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.</p>
+
+        <p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+          IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+          FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+          AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+          LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+          OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+          SOFTWARE.</p>
+        </div></div>
+        <br />
+          <p class="white"> © Copyright 2020</p>
+          <p><a class="white_link" href="#top"><u>Back to top</u></a></p>
+          <br /><br />
+      </div>
+
+
+
+              </div>
+            </div>
+          </div>
+          <!-- end black_bg and 3 end divs-->
+
+          <!-- JS Files -->
+          <script src="node_modules/jquery/dist/jquery.js"></script>
+          <script src="node_modules/what-input/dist/what-input.js"></script>
+          <script src="node_modules/foundation-sites/dist/js/foundation.js"></script>
+          <script src="js/jssocials.min.js"></script>
+          <script src="js/jquery.contact-buttons.js"></script>
+          <script src="js/app.js"></script>
+          <script src="https://www.moneybutton.com/moneybutton.js"></script>
+          <script src="js/generate_code.js"></script>
+          <!-- End JS Files -->
+
+        </body>
+        </html>
