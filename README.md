@@ -1,4 +1,4 @@
-# Spam-free Contact Form with Bitcoin (BSV) and Money Button
+# Spam-free Contact Form Generator with Bitcoin (BSV) and Money Button
 
 ![Spam-free Contact Form Generator](img/generator_screenshot.png)
 
